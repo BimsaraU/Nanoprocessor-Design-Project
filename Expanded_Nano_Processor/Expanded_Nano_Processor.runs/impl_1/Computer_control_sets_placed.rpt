@@ -1,0 +1,74 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Mon May 26 20:04:27 2025
+| Host         : Bimsara running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file Computer_control_sets_placed.rpt
+| Design       : Computer
+| Device       : xc7a35t
+-------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |     9 |
+| Unused register locations in slices containing registers |     8 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      4 |            2 |
+|    16+ |            7 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               8 |            3 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             112 |           30 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-----------------------------------------------------------------------------------------------------+--------------------------+------------------+------------------+----------------+
+|                                             Clock Signal                                            |       Enable Signal      | Set/Reset Signal | Slice Load Count | Bel Load Count |
++-----------------------------------------------------------------------------------------------------+--------------------------+------------------+------------------+----------------+
+|  Driver1/SlowClk/Counter/U0/i_synth/i_baseip.i_xbip_counter/i_dsp48.i_dsp/i_vx7.i_dsp48e_wrap/Q[16] |                          |                  |                1 |              4 |
+|  Driver2/SlowClk/Counter/U0/i_synth/i_baseip.i_xbip_counter/i_dsp48.i_dsp/i_vx7.i_dsp48e_wrap/Q[16] |                          |                  |                2 |              4 |
+|  n_0_1490_BUFG                                                                                      | NP1/PC/E[0]              | Reset_IBUF       |                4 |             16 |
+|  n_0_1490_BUFG                                                                                      | NP1/PC/Q_reg_reg[7][0]   | Reset_IBUF       |                7 |             16 |
+|  n_0_1490_BUFG                                                                                      | NP1/PC/Q_reg_reg[0]_3[0] | Reset_IBUF       |                3 |             16 |
+|  n_0_1490_BUFG                                                                                      | NP1/PC/Q_reg_reg[0]_2[0] | Reset_IBUF       |                4 |             16 |
+|  n_0_1490_BUFG                                                                                      | NP1/PC/Q_reg_reg[0]_4[0] | Reset_IBUF       |                3 |             16 |
+|  n_0_1490_BUFG                                                                                      | NP1/PC/Q_reg_reg[0]_5[0] | Reset_IBUF       |                4 |             16 |
+|  n_0_1490_BUFG                                                                                      | NP1/PC/Q_reg_reg[0]_6[0] | Reset_IBUF       |                5 |             16 |
++-----------------------------------------------------------------------------------------------------+--------------------------+------------------+------------------+----------------+
+
+

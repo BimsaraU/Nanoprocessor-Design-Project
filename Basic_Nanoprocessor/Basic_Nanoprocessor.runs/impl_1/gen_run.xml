@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1748273202">
+  <File Type="ROUTE-PWR" Name="Computer_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="Computer.tcl"/>
+  <File Type="BITSTR-BMM" Name="Computer_bd.bmm"/>
+  <File Type="ROUTE-PWR-SUM" Name="Computer_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="Computer_reports.tcl"/>
+  <File Type="OPT-DCP" Name="Computer_opt.dcp"/>
+  <File Type="OPT-DRC" Name="Computer_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="Computer.hwdef"/>
+  <File Type="PWROPT-DCP" Name="Computer_pwropt.dcp"/>
+  <File Type="PLACE-DCP" Name="Computer_placed.dcp"/>
+  <File Type="PLACE-IO" Name="Computer_io_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="Computer_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="Computer_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="Computer_control_sets_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="Computer_incremental_reuse_pre_placed.rpt"/>
+  <File Type="BG-BGN" Name="Computer.bgn"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="Computer_postplace_pwropt.dcp"/>
+  <File Type="BG-BIN" Name="Computer.bin"/>
+  <File Type="PHYSOPT-DCP" Name="Computer_physopt.dcp"/>
+  <File Type="BITSTR-MSK" Name="Computer.msk"/>
+  <File Type="ROUTE-ERROR-DCP" Name="Computer_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="Computer_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="Computer_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="Computer_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="Computer_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="Computer_drc_routed.rpx"/>
+  <File Type="BITSTR-LTX" Name="Computer.ltx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="Computer_methodology_drc_routed.rpt"/>
+  <File Type="BITSTR-MMI" Name="Computer.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="Computer_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="Computer_methodology_drc_routed.pb"/>
+  <File Type="BITSTR-SYSDEF" Name="Computer.sysdef"/>
+  <File Type="ROUTE-PWR-RPX" Name="Computer_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="Computer_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="Computer_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="Computer_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="Computer_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="Computer_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-CLK" Name="Computer_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="Computer_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="Computer_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="Computer_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="Computer_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="Computer_postroute_physopt_bb.dcp"/>
+  <File Type="BG-BIT" Name="Computer.bit"/>
+  <File Type="BITSTR-RBT" Name="Computer.rbt"/>
+  <File Type="BITSTR-NKY" Name="Computer.nky"/>
+  <File Type="BG-DRC" Name="Computer.drc"/>
+  <File Type="RDI-RDI" Name="Computer.vdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/AU.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Nano_Alts/Basic2/Lab10.srcs/sources_1/new/AU.vhd"/>
+        <Attr Name="ImportTime" Val="1747042444"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Decoder_8.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Nano_Alts/Basic2/Lab10.srcs/sources_1/new/Decoder_8.vhd"/>
+        <Attr Name="ImportTime" Val="1747060895"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Display_Driver.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Nano_Alts/Basic2/Lab10.srcs/sources_1/new/Display_Driver.vhd"/>
+        <Attr Name="ImportTime" Val="1747163194"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/FA.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Lab8/Lab8.srcs/sources_1/new/FA.vhd"/>
+        <Attr Name="ImportTime" Val="1740472392"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/HA.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Lab8/Lab8.srcs/sources_1/new/HA.vhd"/>
+        <Attr Name="ImportTime" Val="1740471353"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Instruction_Decoder.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Nano_Alts/Basic2/Lab10.srcs/sources_1/new/Instruction_Decoder.vhd"/>
+        <Attr Name="ImportTime" Val="1747083441"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Load_Selector.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Nano_Alts/Basic2/Lab10.srcs/sources_1/new/Load_Selector.vhd"/>
+        <Attr Name="ImportTime" Val="1747078126"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/MUX2.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Nano_Alts/Basic2/Lab10.srcs/sources_1/new/MUX2.vhd"/>
+        <Attr Name="ImportTime" Val="1747078935"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/MUX8.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Nano_Alts/Basic2/Lab10.srcs/sources_1/new/MUX8.vhd"/>
+        <Attr Name="ImportTime" Val="1747077987"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/NanoProcessor.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Nano_Alts/Basic2/Lab10.srcs/sources_1/new/NanoProcessor.vhd"/>
+        <Attr Name="ImportTime" Val="1747205469"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/PC_Inc.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Nano_Alts/Basic2/Lab10.srcs/sources_1/new/PC_Inc.vhd"/>
+        <Attr Name="ImportTime" Val="1747031447"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Program_ROM.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Nano_Alts/Basic2/Lab10.srcs/sources_1/new/Program_ROM.vhd"/>
+        <Attr Name="ImportTime" Val="1748245458"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/RCA_4.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Lab8/Lab8.srcs/sources_1/new/RCA_4.vhd"/>
+        <Attr Name="ImportTime" Val="1745437845"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Register_4bit.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Nano_Alts/Basic2/Lab10.srcs/sources_1/new/Register_4bit.vhd"/>
+        <Attr Name="ImportTime" Val="1747205469"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Register_Bank.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Nano_Alts/Basic2/Lab10.srcs/sources_1/new/Register_Bank.vhd"/>
+        <Attr Name="ImportTime" Val="1747205469"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Register_PC.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Nano_Alts/Basic2/Lab10.srcs/sources_1/new/Register_PC.vhd"/>
+        <Attr Name="ImportTime" Val="1747079369"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/Slow_Clk.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Lab6/Lab6.srcs/sources_1/new/Slow_Clk.vhd"/>
+        <Attr Name="ImportTime" Val="1745590819"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Computer.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Nano_Alts/Basic2/Lab10.srcs/sources_1/new/Computer.vhd"/>
+        <Attr Name="ImportTime" Val="1748273196"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="Computer"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/Basic/Basic_Constraints.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Nano_Alts/Basic2/Basic_Constraints.xdc"/>
+        <Attr Name="ImportTime" Val="1745590309"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>

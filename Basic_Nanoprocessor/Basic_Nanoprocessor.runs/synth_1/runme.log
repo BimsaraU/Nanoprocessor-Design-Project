@@ -1,0 +1,876 @@
+
+*** Running vivado
+    with args -log Computer.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Computer.tcl
+
+
+****** Vivado v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source Computer.tcl -notrace
+Command: synth_design -top Computer -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 26060 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 434.863 ; gain = 95.574
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'Computer' [C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/new/Computer.vhd:13]
+	Parameter N bound to: 26 - type: integer 
+INFO: [Synth 8-3491] module 'Slow_Clk' declared at 'C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/imports/new/Slow_Clk.vhd:5' bound to instance 'SlowClk' of component 'Slow_Clk' [C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/new/Computer.vhd:48]
+INFO: [Synth 8-638] synthesizing module 'Slow_Clk' [C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/imports/new/Slow_Clk.vhd:15]
+	Parameter N bound to: 26 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Slow_Clk' (1#1) [C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/imports/new/Slow_Clk.vhd:15]
+INFO: [Synth 8-3491] module 'NanoProcessor' declared at 'C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/new/NanoProcessor.vhd:4' bound to instance 'NP1' of component 'NanoProcessor' [C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/new/Computer.vhd:56]
+INFO: [Synth 8-638] synthesizing module 'NanoProcessor' [C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/new/NanoProcessor.vhd:14]
+INFO: [Synth 8-3491] module 'Register_PC' declared at 'C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/new/Register_PC.vhd:4' bound to instance 'Program_Counter' of component 'Register_PC' [C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/new/NanoProcessor.vhd:137]
+INFO: [Synth 8-638] synthesizing module 'Register_PC' [C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/new/Register_PC.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'Register_PC' (2#1) [C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/new/Register_PC.vhd:13]
+INFO: [Synth 8-3491] module 'PC_Inc' declared at 'C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/new/PC_Inc.vhd:4' bound to instance 'Incrementer' of component 'PC_Inc' [C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/new/NanoProcessor.vhd:145]
+INFO: [Synth 8-638] synthesizing module 'PC_Inc' [C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/new/PC_Inc.vhd:9]
+INFO: [Synth 8-256] done synthesizing module 'PC_Inc' (3#1) [C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/new/PC_Inc.vhd:9]
+INFO: [Synth 8-3491] module 'MUX2' declared at 'C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/new/MUX2.vhd:4' bound to instance 'Next_Address_Selector' of component 'MUX2' [C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/new/NanoProcessor.vhd:151]
+INFO: [Synth 8-638] synthesizing module 'MUX2' [C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/new/MUX2.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'MUX2' (4#1) [C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/new/MUX2.vhd:13]
+INFO: [Synth 8-3491] module 'Instruction_Decoder' declared at 'C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/new/Instruction_Decoder.vhd:4' bound to instance 'InstructionDecoder' of component 'Instruction_Decoder' [C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/new/NanoProcessor.vhd:159]
+INFO: [Synth 8-638] synthesizing module 'Instruction_Decoder' [C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/new/Instruction_Decoder.vhd:19]
+INFO: [Synth 8-226] default block is never used [C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/new/Instruction_Decoder.vhd:37]
+INFO: [Synth 8-256] done synthesizing module 'Instruction_Decoder' (5#1) [C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/new/Instruction_Decoder.vhd:19]
+INFO: [Synth 8-3491] module 'Load_Selector' declared at 'C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/new/Load_Selector.vhd:4' bound to instance 'LoadSelector' of component 'Load_Selector' [C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/new/NanoProcessor.vhd:173]
+INFO: [Synth 8-638] synthesizing module 'Load_Selector' [C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/new/Load_Selector.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'Load_Selector' (6#1) [C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/new/Load_Selector.vhd:13]
+INFO: [Synth 8-3491] module 'Register_Bank' declared at 'C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/new/Register_Bank.vhd:4' bound to instance 'RegisterBank' of component 'Register_Bank' [C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/new/NanoProcessor.vhd:182]
+INFO: [Synth 8-638] synthesizing module 'Register_Bank' [C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/new/Register_Bank.vhd:21]
+INFO: [Synth 8-3491] module 'Decoder_8' declared at 'C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/new/Decoder_8.vhd:4' bound to instance 'Decoder_3_to_8' of component 'Decoder_8' [C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/new/Register_Bank.vhd:44]
+INFO: [Synth 8-638] synthesizing module 'Decoder_8' [C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/new/Decoder_8.vhd:11]
+INFO: [Synth 8-226] default block is never used [C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/new/Decoder_8.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'Decoder_8' (7#1) [C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/new/Decoder_8.vhd:11]
+INFO: [Synth 8-3491] module 'Register_4bit' declared at 'C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/new/Register_4bit.vhd:4' bound to instance 'reg_0' of component 'Register_4bit' [C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/new/Register_Bank.vhd:50]
+INFO: [Synth 8-638] synthesizing module 'Register_4bit' [C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/new/Register_4bit.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'Register_4bit' (8#1) [C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/new/Register_4bit.vhd:14]
+INFO: [Synth 8-3491] module 'Register_4bit' declared at 'C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/new/Register_4bit.vhd:4' bound to instance 'reg_1' of component 'Register_4bit' [C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/new/Register_Bank.vhd:59]
+INFO: [Synth 8-3491] module 'Register_4bit' declared at 'C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/new/Register_4bit.vhd:4' bound to instance 'reg_2' of component 'Register_4bit' [C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/new/Register_Bank.vhd:68]
+INFO: [Synth 8-3491] module 'Register_4bit' declared at 'C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/new/Register_4bit.vhd:4' bound to instance 'reg_3' of component 'Register_4bit' [C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/new/Register_Bank.vhd:77]
+INFO: [Synth 8-3491] module 'Register_4bit' declared at 'C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/new/Register_4bit.vhd:4' bound to instance 'reg_4' of component 'Register_4bit' [C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/new/Register_Bank.vhd:86]
+INFO: [Synth 8-3491] module 'Register_4bit' declared at 'C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/new/Register_4bit.vhd:4' bound to instance 'reg_5' of component 'Register_4bit' [C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/new/Register_Bank.vhd:95]
+INFO: [Synth 8-3491] module 'Register_4bit' declared at 'C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/new/Register_4bit.vhd:4' bound to instance 'reg_6' of component 'Register_4bit' [C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/new/Register_Bank.vhd:104]
+INFO: [Synth 8-3491] module 'Register_4bit' declared at 'C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/new/Register_4bit.vhd:4' bound to instance 'reg_7' of component 'Register_4bit' [C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/new/Register_Bank.vhd:113]
+INFO: [Synth 8-256] done synthesizing module 'Register_Bank' (9#1) [C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/new/Register_Bank.vhd:21]
+INFO: [Synth 8-3491] module 'MUX8' declared at 'C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/new/MUX8.vhd:4' bound to instance 'Selector_A' of component 'MUX8' [C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/new/NanoProcessor.vhd:198]
+INFO: [Synth 8-638] synthesizing module 'MUX8' [C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/new/MUX8.vhd:19]
+INFO: [Synth 8-226] default block is never used [C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/new/MUX8.vhd:23]
+INFO: [Synth 8-256] done synthesizing module 'MUX8' (10#1) [C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/new/MUX8.vhd:19]
+INFO: [Synth 8-3491] module 'MUX8' declared at 'C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/new/MUX8.vhd:4' bound to instance 'Selector_B' of component 'MUX8' [C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/new/NanoProcessor.vhd:212]
+INFO: [Synth 8-3491] module 'AU' declared at 'C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/new/AU.vhd:4' bound to instance 'Arithmetic_Unit' of component 'AU' [C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/new/NanoProcessor.vhd:226]
+INFO: [Synth 8-638] synthesizing module 'AU' [C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/new/AU.vhd:13]
+INFO: [Synth 8-3491] module 'RCA_4' declared at 'C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/imports/new/RCA_4.vhd:5' bound to instance 'RCA' of component 'RCA_4' [C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/new/AU.vhd:26]
+INFO: [Synth 8-638] synthesizing module 'RCA_4' [C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/imports/new/RCA_4.vhd:13]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/imports/new/FA.vhd:4' bound to instance 'FA_0' of component 'FA' [C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/imports/new/RCA_4.vhd:27]
+INFO: [Synth 8-638] synthesizing module 'FA' [C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/imports/new/FA.vhd:12]
+INFO: [Synth 8-3491] module 'HA' declared at 'C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/imports/new/HA.vhd:4' bound to instance 'HA_0' of component 'HA' [C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/imports/new/FA.vhd:26]
+INFO: [Synth 8-638] synthesizing module 'HA' [C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/imports/new/HA.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'HA' (11#1) [C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/imports/new/HA.vhd:11]
+INFO: [Synth 8-3491] module 'HA' declared at 'C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/imports/new/HA.vhd:4' bound to instance 'HA_1' of component 'HA' [C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/imports/new/FA.vhd:33]
+INFO: [Synth 8-256] done synthesizing module 'FA' (12#1) [C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/imports/new/FA.vhd:12]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/imports/new/FA.vhd:4' bound to instance 'FA_1' of component 'FA' [C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/imports/new/RCA_4.vhd:35]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/imports/new/FA.vhd:4' bound to instance 'FA_2' of component 'FA' [C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/imports/new/RCA_4.vhd:43]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/imports/new/FA.vhd:4' bound to instance 'FA_3' of component 'FA' [C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/imports/new/RCA_4.vhd:51]
+INFO: [Synth 8-256] done synthesizing module 'RCA_4' (13#1) [C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/imports/new/RCA_4.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'AU' (14#1) [C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/new/AU.vhd:13]
+INFO: [Synth 8-3491] module 'Program_ROM' declared at 'C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/new/Program_ROM.vhd:5' bound to instance 'ProgramROM' of component 'Program_ROM' [C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/new/NanoProcessor.vhd:236]
+INFO: [Synth 8-638] synthesizing module 'Program_ROM' [C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/new/Program_ROM.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'Program_ROM' (15#1) [C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/new/Program_ROM.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'NanoProcessor' (16#1) [C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/new/NanoProcessor.vhd:14]
+INFO: [Synth 8-3491] module 'Display_Driver' declared at 'C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/new/Display_Driver.vhd:5' bound to instance 'Driver' of component 'Display_Driver' [C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/new/Computer.vhd:65]
+INFO: [Synth 8-638] synthesizing module 'Display_Driver' [C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/new/Display_Driver.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'Display_Driver' (17#1) [C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/new/Display_Driver.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'Computer' (18#1) [C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/new/Computer.vhd:13]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 490.727 ; gain = 151.438
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 490.727 ; gain = 151.438
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 490.727 ; gain = 151.438
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/constrs_1/imports/Basic/Basic_Constraints.xdc]
+Finished Parsing XDC File [C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/constrs_1/imports/Basic/Basic_Constraints.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/constrs_1/imports/Basic/Basic_Constraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Computer_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Computer_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 815.996 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 815.996 ; gain = 476.707
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 815.996 ; gain = 476.707
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 815.996 ; gain = 476.707
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "JumpFlag" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Zero" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Program" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "sevenSegment_ROM" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 815.996 ; gain = 476.707
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 9     
++---Registers : 
+	                4 Bit    Registers := 8     
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   9 Input     12 Bit        Muxes := 1     
+	   8 Input      8 Bit        Muxes := 1     
+	  17 Input      7 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 9     
+	   2 Input      3 Bit        Muxes := 1     
+	   4 Input      3 Bit        Muxes := 4     
+	   4 Input      1 Bit        Muxes := 2     
+	   5 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 9     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module Register_PC 
+Detailed RTL Component Info : 
++---Registers : 
+	                3 Bit    Registers := 1     
+Module PC_Inc 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
+Module MUX2 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      3 Bit        Muxes := 1     
+Module Instruction_Decoder 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      4 Bit        Muxes := 1     
+	   4 Input      3 Bit        Muxes := 4     
+	   4 Input      1 Bit        Muxes := 2     
+	   5 Input      1 Bit        Muxes := 1     
+Module Load_Selector 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+Module Decoder_8 
+Detailed RTL Component Info : 
++---Muxes : 
+	   8 Input      8 Bit        Muxes := 1     
+Module Register_4bit 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module HA 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
+Module AU 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Program_ROM 
+Detailed RTL Component Info : 
++---Muxes : 
+	   9 Input     12 Bit        Muxes := 1     
+Module Display_Driver 
+Detailed RTL Component Info : 
++---Muxes : 
+	  17 Input      7 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-3886] merging instance 'NP1/RegisterBank/reg_0/Q_reg_reg[2]' (FDE) to 'NP1/RegisterBank/reg_0/Q_reg_reg[3]'
+INFO: [Synth 8-3886] merging instance 'NP1/RegisterBank/reg_0/Q_reg_reg[3]' (FDE) to 'NP1/RegisterBank/reg_0/Q_reg_reg[1]'
+INFO: [Synth 8-3886] merging instance 'NP1/RegisterBank/reg_0/Q_reg_reg[1]' (FDE) to 'NP1/RegisterBank/reg_0/Q_reg_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\NP1/RegisterBank/reg_0/Q_reg_reg[0] )
+WARNING: [Synth 8-3332] Sequential element (NP1/RegisterBank/reg_0/Q_reg_reg[0]) is unused and will be removed from module Computer.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 815.996 ; gain = 476.707
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:27 . Memory (MB): peak = 815.996 ; gain = 476.707
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:27 . Memory (MB): peak = 815.996 ; gain = 476.707
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance 'NP1/RegisterBank/reg_5/Q_reg_reg[1]' (FDE) to 'NP1/RegisterBank/reg_3/Q_reg_reg[1]'
+INFO: [Synth 8-3886] merging instance 'NP1/RegisterBank/reg_3/Q_reg_reg[1]' (FDE) to 'NP1/RegisterBank/reg_4/Q_reg_reg[1]'
+INFO: [Synth 8-3886] merging instance 'NP1/RegisterBank/reg_4/Q_reg_reg[1]' (FDE) to 'NP1/RegisterBank/reg_6/Q_reg_reg[1]'
+INFO: [Synth 8-3886] merging instance 'NP1/RegisterBank/reg_5/Q_reg_reg[0]' (FDE) to 'NP1/RegisterBank/reg_3/Q_reg_reg[0]'
+INFO: [Synth 8-3886] merging instance 'NP1/RegisterBank/reg_3/Q_reg_reg[0]' (FDE) to 'NP1/RegisterBank/reg_4/Q_reg_reg[0]'
+INFO: [Synth 8-3886] merging instance 'NP1/RegisterBank/reg_4/Q_reg_reg[0]' (FDE) to 'NP1/RegisterBank/reg_6/Q_reg_reg[0]'
+INFO: [Synth 8-3886] merging instance 'NP1/RegisterBank/reg_5/Q_reg_reg[3]' (FDE) to 'NP1/RegisterBank/reg_3/Q_reg_reg[3]'
+INFO: [Synth 8-3886] merging instance 'NP1/RegisterBank/reg_3/Q_reg_reg[3]' (FDE) to 'NP1/RegisterBank/reg_4/Q_reg_reg[3]'
+INFO: [Synth 8-3886] merging instance 'NP1/RegisterBank/reg_4/Q_reg_reg[3]' (FDE) to 'NP1/RegisterBank/reg_6/Q_reg_reg[3]'
+INFO: [Synth 8-3886] merging instance 'NP1/RegisterBank/reg_5/Q_reg_reg[2]' (FDE) to 'NP1/RegisterBank/reg_3/Q_reg_reg[2]'
+INFO: [Synth 8-3886] merging instance 'NP1/RegisterBank/reg_3/Q_reg_reg[2]' (FDE) to 'NP1/RegisterBank/reg_4/Q_reg_reg[2]'
+INFO: [Synth 8-3886] merging instance 'NP1/RegisterBank/reg_4/Q_reg_reg[2]' (FDE) to 'NP1/RegisterBank/reg_6/Q_reg_reg[2]'
+WARNING: [Synth 8-3332] Sequential element (NP1/RegisterBank/reg_6/Q_reg_reg[1]) is unused and will be removed from module Computer.
+WARNING: [Synth 8-3332] Sequential element (NP1/RegisterBank/reg_6/Q_reg_reg[0]) is unused and will be removed from module Computer.
+WARNING: [Synth 8-3332] Sequential element (NP1/RegisterBank/reg_6/Q_reg_reg[3]) is unused and will be removed from module Computer.
+WARNING: [Synth 8-3332] Sequential element (NP1/RegisterBank/reg_6/Q_reg_reg[2]) is unused and will be removed from module Computer.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:23 ; elapsed = 00:00:27 . Memory (MB): peak = 840.398 ; gain = 501.109
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:23 ; elapsed = 00:00:28 . Memory (MB): peak = 840.398 ; gain = 501.109
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:23 ; elapsed = 00:00:28 . Memory (MB): peak = 840.398 ; gain = 501.109
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:23 ; elapsed = 00:00:28 . Memory (MB): peak = 840.398 ; gain = 501.109
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:23 ; elapsed = 00:00:28 . Memory (MB): peak = 840.398 ; gain = 501.109
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:23 ; elapsed = 00:00:28 . Memory (MB): peak = 840.398 ; gain = 501.109
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:23 ; elapsed = 00:00:28 . Memory (MB): peak = 840.398 ; gain = 501.109
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |     7|
+|3     |LUT1   |     1|
+|4     |LUT2   |     3|
+|5     |LUT3   |     2|
+|6     |LUT4   |    12|
+|7     |LUT5   |    14|
+|8     |LUT6   |     4|
+|9     |FDCE   |     3|
+|10    |FDRE   |    39|
+|11    |IBUF   |     2|
+|12    |OBUF   |    13|
++------+-------+------+
+
+Report Instance Areas: 
++------+--------------------+----------------+------+
+|      |Instance            |Module          |Cells |
++------+--------------------+----------------+------+
+|1     |top                 |                |   101|
+|2     |  NP1               |NanoProcessor   |    50|
+|3     |    Program_Counter |Register_PC     |    31|
+|4     |    RegisterBank    |Register_Bank   |    19|
+|5     |      reg_1         |Register_4bit   |     4|
+|6     |      reg_2         |Register_4bit_0 |     4|
+|7     |      reg_7         |Register_4bit_1 |    11|
+|8     |  SlowClk           |Slow_Clk        |    35|
++------+--------------------+----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:24 ; elapsed = 00:00:28 . Memory (MB): peak = 840.398 ; gain = 501.109
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 5 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:20 . Memory (MB): peak = 840.398 ; gain = 175.840
+Synthesis Optimization Complete : Time (s): cpu = 00:00:24 ; elapsed = 00:00:28 . Memory (MB): peak = 840.398 ; gain = 501.109
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 9 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+100 Infos, 5 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:26 ; elapsed = 00:00:31 . Memory (MB): peak = 840.398 ; gain = 513.582
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.runs/synth_1/Computer.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Computer_utilization_synth.rpt -pb Computer_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 840.398 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Mon May 26 20:49:20 2025...
+
+*** Running vivado
+    with args -log Computer.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Computer.tcl
+
+
+****** Vivado v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source Computer.tcl -notrace
+Command: synth_design -top Computer -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 8324 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 434.645 ; gain = 95.477
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'Computer' [C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/new/Computer.vhd:14]
+	Parameter N bound to: 26 - type: integer 
+INFO: [Synth 8-3491] module 'Slow_Clk' declared at 'C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/imports/new/Slow_Clk.vhd:5' bound to instance 'SlowClk' of component 'Slow_Clk' [C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/new/Computer.vhd:49]
+INFO: [Synth 8-638] synthesizing module 'Slow_Clk' [C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/imports/new/Slow_Clk.vhd:15]
+	Parameter N bound to: 26 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Slow_Clk' (1#1) [C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/imports/new/Slow_Clk.vhd:15]
+INFO: [Synth 8-3491] module 'NanoProcessor' declared at 'C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/new/NanoProcessor.vhd:4' bound to instance 'NP1' of component 'NanoProcessor' [C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/new/Computer.vhd:57]
+INFO: [Synth 8-638] synthesizing module 'NanoProcessor' [C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/new/NanoProcessor.vhd:14]
+INFO: [Synth 8-3491] module 'Register_PC' declared at 'C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/new/Register_PC.vhd:4' bound to instance 'Program_Counter' of component 'Register_PC' [C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/new/NanoProcessor.vhd:137]
+INFO: [Synth 8-638] synthesizing module 'Register_PC' [C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/new/Register_PC.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'Register_PC' (2#1) [C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/new/Register_PC.vhd:13]
+INFO: [Synth 8-3491] module 'PC_Inc' declared at 'C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/new/PC_Inc.vhd:4' bound to instance 'Incrementer' of component 'PC_Inc' [C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/new/NanoProcessor.vhd:145]
+INFO: [Synth 8-638] synthesizing module 'PC_Inc' [C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/new/PC_Inc.vhd:9]
+INFO: [Synth 8-256] done synthesizing module 'PC_Inc' (3#1) [C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/new/PC_Inc.vhd:9]
+INFO: [Synth 8-3491] module 'MUX2' declared at 'C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/new/MUX2.vhd:4' bound to instance 'Next_Address_Selector' of component 'MUX2' [C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/new/NanoProcessor.vhd:151]
+INFO: [Synth 8-638] synthesizing module 'MUX2' [C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/new/MUX2.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'MUX2' (4#1) [C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/new/MUX2.vhd:13]
+INFO: [Synth 8-3491] module 'Instruction_Decoder' declared at 'C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/new/Instruction_Decoder.vhd:4' bound to instance 'InstructionDecoder' of component 'Instruction_Decoder' [C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/new/NanoProcessor.vhd:159]
+INFO: [Synth 8-638] synthesizing module 'Instruction_Decoder' [C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/new/Instruction_Decoder.vhd:19]
+INFO: [Synth 8-226] default block is never used [C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/new/Instruction_Decoder.vhd:37]
+INFO: [Synth 8-256] done synthesizing module 'Instruction_Decoder' (5#1) [C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/new/Instruction_Decoder.vhd:19]
+INFO: [Synth 8-3491] module 'Load_Selector' declared at 'C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/new/Load_Selector.vhd:4' bound to instance 'LoadSelector' of component 'Load_Selector' [C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/new/NanoProcessor.vhd:173]
+INFO: [Synth 8-638] synthesizing module 'Load_Selector' [C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/new/Load_Selector.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'Load_Selector' (6#1) [C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/new/Load_Selector.vhd:13]
+INFO: [Synth 8-3491] module 'Register_Bank' declared at 'C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/new/Register_Bank.vhd:4' bound to instance 'RegisterBank' of component 'Register_Bank' [C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/new/NanoProcessor.vhd:182]
+INFO: [Synth 8-638] synthesizing module 'Register_Bank' [C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/new/Register_Bank.vhd:21]
+INFO: [Synth 8-3491] module 'Decoder_8' declared at 'C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/new/Decoder_8.vhd:4' bound to instance 'Decoder_3_to_8' of component 'Decoder_8' [C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/new/Register_Bank.vhd:44]
+INFO: [Synth 8-638] synthesizing module 'Decoder_8' [C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/new/Decoder_8.vhd:11]
+INFO: [Synth 8-226] default block is never used [C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/new/Decoder_8.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'Decoder_8' (7#1) [C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/new/Decoder_8.vhd:11]
+INFO: [Synth 8-3491] module 'Register_4bit' declared at 'C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/new/Register_4bit.vhd:4' bound to instance 'reg_0' of component 'Register_4bit' [C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/new/Register_Bank.vhd:50]
+INFO: [Synth 8-638] synthesizing module 'Register_4bit' [C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/new/Register_4bit.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'Register_4bit' (8#1) [C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/new/Register_4bit.vhd:14]
+INFO: [Synth 8-3491] module 'Register_4bit' declared at 'C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/new/Register_4bit.vhd:4' bound to instance 'reg_1' of component 'Register_4bit' [C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/new/Register_Bank.vhd:59]
+INFO: [Synth 8-3491] module 'Register_4bit' declared at 'C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/new/Register_4bit.vhd:4' bound to instance 'reg_2' of component 'Register_4bit' [C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/new/Register_Bank.vhd:68]
+INFO: [Synth 8-3491] module 'Register_4bit' declared at 'C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/new/Register_4bit.vhd:4' bound to instance 'reg_3' of component 'Register_4bit' [C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/new/Register_Bank.vhd:77]
+INFO: [Synth 8-3491] module 'Register_4bit' declared at 'C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/new/Register_4bit.vhd:4' bound to instance 'reg_4' of component 'Register_4bit' [C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/new/Register_Bank.vhd:86]
+INFO: [Synth 8-3491] module 'Register_4bit' declared at 'C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/new/Register_4bit.vhd:4' bound to instance 'reg_5' of component 'Register_4bit' [C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/new/Register_Bank.vhd:95]
+INFO: [Synth 8-3491] module 'Register_4bit' declared at 'C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/new/Register_4bit.vhd:4' bound to instance 'reg_6' of component 'Register_4bit' [C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/new/Register_Bank.vhd:104]
+INFO: [Synth 8-3491] module 'Register_4bit' declared at 'C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/new/Register_4bit.vhd:4' bound to instance 'reg_7' of component 'Register_4bit' [C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/new/Register_Bank.vhd:113]
+INFO: [Synth 8-256] done synthesizing module 'Register_Bank' (9#1) [C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/new/Register_Bank.vhd:21]
+INFO: [Synth 8-3491] module 'MUX8' declared at 'C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/new/MUX8.vhd:4' bound to instance 'Selector_A' of component 'MUX8' [C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/new/NanoProcessor.vhd:198]
+INFO: [Synth 8-638] synthesizing module 'MUX8' [C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/new/MUX8.vhd:19]
+INFO: [Synth 8-226] default block is never used [C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/new/MUX8.vhd:23]
+INFO: [Synth 8-256] done synthesizing module 'MUX8' (10#1) [C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/new/MUX8.vhd:19]
+INFO: [Synth 8-3491] module 'MUX8' declared at 'C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/new/MUX8.vhd:4' bound to instance 'Selector_B' of component 'MUX8' [C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/new/NanoProcessor.vhd:212]
+INFO: [Synth 8-3491] module 'AU' declared at 'C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/new/AU.vhd:4' bound to instance 'Arithmetic_Unit' of component 'AU' [C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/new/NanoProcessor.vhd:226]
+INFO: [Synth 8-638] synthesizing module 'AU' [C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/new/AU.vhd:13]
+INFO: [Synth 8-3491] module 'RCA_4' declared at 'C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/imports/new/RCA_4.vhd:5' bound to instance 'RCA' of component 'RCA_4' [C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/new/AU.vhd:26]
+INFO: [Synth 8-638] synthesizing module 'RCA_4' [C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/imports/new/RCA_4.vhd:13]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/imports/new/FA.vhd:4' bound to instance 'FA_0' of component 'FA' [C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/imports/new/RCA_4.vhd:27]
+INFO: [Synth 8-638] synthesizing module 'FA' [C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/imports/new/FA.vhd:12]
+INFO: [Synth 8-3491] module 'HA' declared at 'C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/imports/new/HA.vhd:4' bound to instance 'HA_0' of component 'HA' [C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/imports/new/FA.vhd:26]
+INFO: [Synth 8-638] synthesizing module 'HA' [C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/imports/new/HA.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'HA' (11#1) [C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/imports/new/HA.vhd:11]
+INFO: [Synth 8-3491] module 'HA' declared at 'C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/imports/new/HA.vhd:4' bound to instance 'HA_1' of component 'HA' [C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/imports/new/FA.vhd:33]
+INFO: [Synth 8-256] done synthesizing module 'FA' (12#1) [C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/imports/new/FA.vhd:12]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/imports/new/FA.vhd:4' bound to instance 'FA_1' of component 'FA' [C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/imports/new/RCA_4.vhd:35]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/imports/new/FA.vhd:4' bound to instance 'FA_2' of component 'FA' [C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/imports/new/RCA_4.vhd:43]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/imports/new/FA.vhd:4' bound to instance 'FA_3' of component 'FA' [C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/imports/new/RCA_4.vhd:51]
+INFO: [Synth 8-256] done synthesizing module 'RCA_4' (13#1) [C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/imports/new/RCA_4.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'AU' (14#1) [C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/new/AU.vhd:13]
+INFO: [Synth 8-3491] module 'Program_ROM' declared at 'C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/new/Program_ROM.vhd:5' bound to instance 'ProgramROM' of component 'Program_ROM' [C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/new/NanoProcessor.vhd:236]
+INFO: [Synth 8-638] synthesizing module 'Program_ROM' [C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/new/Program_ROM.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'Program_ROM' (15#1) [C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/new/Program_ROM.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'NanoProcessor' (16#1) [C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/new/NanoProcessor.vhd:14]
+INFO: [Synth 8-3491] module 'Display_Driver' declared at 'C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/new/Display_Driver.vhd:5' bound to instance 'Driver' of component 'Display_Driver' [C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/new/Computer.vhd:66]
+INFO: [Synth 8-638] synthesizing module 'Display_Driver' [C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/new/Display_Driver.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'Display_Driver' (17#1) [C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/new/Display_Driver.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'Computer' (18#1) [C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/sources_1/new/Computer.vhd:14]
+WARNING: [Synth 8-3917] design Computer has port Anode[3] driven by constant 1
+WARNING: [Synth 8-3917] design Computer has port Anode[2] driven by constant 1
+WARNING: [Synth 8-3917] design Computer has port Anode[1] driven by constant 1
+WARNING: [Synth 8-3917] design Computer has port Anode[0] driven by constant 0
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 490.328 ; gain = 151.160
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 490.328 ; gain = 151.160
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 490.328 ; gain = 151.160
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/constrs_1/imports/Basic/Basic_Constraints.xdc]
+Finished Parsing XDC File [C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/constrs_1/imports/Basic/Basic_Constraints.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.srcs/constrs_1/imports/Basic/Basic_Constraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Computer_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Computer_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 817.258 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 817.258 ; gain = 478.090
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 817.258 ; gain = 478.090
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 817.258 ; gain = 478.090
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "JumpFlag" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Zero" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Program" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "sevenSegment_ROM" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 817.258 ; gain = 478.090
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 9     
++---Registers : 
+	                4 Bit    Registers := 8     
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   9 Input     12 Bit        Muxes := 1     
+	   8 Input      8 Bit        Muxes := 1     
+	  17 Input      7 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 9     
+	   2 Input      3 Bit        Muxes := 1     
+	   4 Input      3 Bit        Muxes := 4     
+	   4 Input      1 Bit        Muxes := 2     
+	   5 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 9     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module Register_PC 
+Detailed RTL Component Info : 
++---Registers : 
+	                3 Bit    Registers := 1     
+Module PC_Inc 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
+Module MUX2 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      3 Bit        Muxes := 1     
+Module Instruction_Decoder 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      4 Bit        Muxes := 1     
+	   4 Input      3 Bit        Muxes := 4     
+	   4 Input      1 Bit        Muxes := 2     
+	   5 Input      1 Bit        Muxes := 1     
+Module Load_Selector 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+Module Decoder_8 
+Detailed RTL Component Info : 
++---Muxes : 
+	   8 Input      8 Bit        Muxes := 1     
+Module Register_4bit 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module HA 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
+Module AU 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Program_ROM 
+Detailed RTL Component Info : 
++---Muxes : 
+	   9 Input     12 Bit        Muxes := 1     
+Module Display_Driver 
+Detailed RTL Component Info : 
++---Muxes : 
+	  17 Input      7 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3917] design Computer has port Anode[3] driven by constant 1
+WARNING: [Synth 8-3917] design Computer has port Anode[2] driven by constant 1
+WARNING: [Synth 8-3917] design Computer has port Anode[1] driven by constant 1
+WARNING: [Synth 8-3917] design Computer has port Anode[0] driven by constant 0
+INFO: [Synth 8-3886] merging instance 'NP1/RegisterBank/reg_0/Q_reg_reg[2]' (FDE) to 'NP1/RegisterBank/reg_0/Q_reg_reg[3]'
+INFO: [Synth 8-3886] merging instance 'NP1/RegisterBank/reg_0/Q_reg_reg[3]' (FDE) to 'NP1/RegisterBank/reg_0/Q_reg_reg[1]'
+INFO: [Synth 8-3886] merging instance 'NP1/RegisterBank/reg_0/Q_reg_reg[1]' (FDE) to 'NP1/RegisterBank/reg_0/Q_reg_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\NP1/RegisterBank/reg_0/Q_reg_reg[0] )
+WARNING: [Synth 8-3332] Sequential element (NP1/RegisterBank/reg_0/Q_reg_reg[0]) is unused and will be removed from module Computer.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 817.258 ; gain = 478.090
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:27 . Memory (MB): peak = 817.258 ; gain = 478.090
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:27 . Memory (MB): peak = 817.258 ; gain = 478.090
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance 'NP1/RegisterBank/reg_5/Q_reg_reg[1]' (FDE) to 'NP1/RegisterBank/reg_3/Q_reg_reg[1]'
+INFO: [Synth 8-3886] merging instance 'NP1/RegisterBank/reg_3/Q_reg_reg[1]' (FDE) to 'NP1/RegisterBank/reg_4/Q_reg_reg[1]'
+INFO: [Synth 8-3886] merging instance 'NP1/RegisterBank/reg_4/Q_reg_reg[1]' (FDE) to 'NP1/RegisterBank/reg_6/Q_reg_reg[1]'
+INFO: [Synth 8-3886] merging instance 'NP1/RegisterBank/reg_5/Q_reg_reg[0]' (FDE) to 'NP1/RegisterBank/reg_3/Q_reg_reg[0]'
+INFO: [Synth 8-3886] merging instance 'NP1/RegisterBank/reg_3/Q_reg_reg[0]' (FDE) to 'NP1/RegisterBank/reg_4/Q_reg_reg[0]'
+INFO: [Synth 8-3886] merging instance 'NP1/RegisterBank/reg_4/Q_reg_reg[0]' (FDE) to 'NP1/RegisterBank/reg_6/Q_reg_reg[0]'
+INFO: [Synth 8-3886] merging instance 'NP1/RegisterBank/reg_5/Q_reg_reg[3]' (FDE) to 'NP1/RegisterBank/reg_3/Q_reg_reg[3]'
+INFO: [Synth 8-3886] merging instance 'NP1/RegisterBank/reg_3/Q_reg_reg[3]' (FDE) to 'NP1/RegisterBank/reg_4/Q_reg_reg[3]'
+INFO: [Synth 8-3886] merging instance 'NP1/RegisterBank/reg_4/Q_reg_reg[3]' (FDE) to 'NP1/RegisterBank/reg_6/Q_reg_reg[3]'
+INFO: [Synth 8-3886] merging instance 'NP1/RegisterBank/reg_5/Q_reg_reg[2]' (FDE) to 'NP1/RegisterBank/reg_3/Q_reg_reg[2]'
+INFO: [Synth 8-3886] merging instance 'NP1/RegisterBank/reg_3/Q_reg_reg[2]' (FDE) to 'NP1/RegisterBank/reg_4/Q_reg_reg[2]'
+INFO: [Synth 8-3886] merging instance 'NP1/RegisterBank/reg_4/Q_reg_reg[2]' (FDE) to 'NP1/RegisterBank/reg_6/Q_reg_reg[2]'
+WARNING: [Synth 8-3332] Sequential element (NP1/RegisterBank/reg_6/Q_reg_reg[1]) is unused and will be removed from module Computer.
+WARNING: [Synth 8-3332] Sequential element (NP1/RegisterBank/reg_6/Q_reg_reg[0]) is unused and will be removed from module Computer.
+WARNING: [Synth 8-3332] Sequential element (NP1/RegisterBank/reg_6/Q_reg_reg[3]) is unused and will be removed from module Computer.
+WARNING: [Synth 8-3332] Sequential element (NP1/RegisterBank/reg_6/Q_reg_reg[2]) is unused and will be removed from module Computer.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:23 ; elapsed = 00:00:27 . Memory (MB): peak = 837.898 ; gain = 498.730
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:24 ; elapsed = 00:00:28 . Memory (MB): peak = 837.898 ; gain = 498.730
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:24 ; elapsed = 00:00:28 . Memory (MB): peak = 837.898 ; gain = 498.730
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:24 ; elapsed = 00:00:28 . Memory (MB): peak = 837.898 ; gain = 498.730
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:24 ; elapsed = 00:00:28 . Memory (MB): peak = 837.898 ; gain = 498.730
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:24 ; elapsed = 00:00:28 . Memory (MB): peak = 837.898 ; gain = 498.730
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:24 ; elapsed = 00:00:28 . Memory (MB): peak = 837.898 ; gain = 498.730
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |     7|
+|3     |LUT1   |     1|
+|4     |LUT2   |     3|
+|5     |LUT3   |     2|
+|6     |LUT4   |    12|
+|7     |LUT5   |    14|
+|8     |LUT6   |     4|
+|9     |FDCE   |     3|
+|10    |FDRE   |    39|
+|11    |IBUF   |     2|
+|12    |OBUF   |    17|
++------+-------+------+
+
+Report Instance Areas: 
++------+--------------------+----------------+------+
+|      |Instance            |Module          |Cells |
++------+--------------------+----------------+------+
+|1     |top                 |                |   105|
+|2     |  NP1               |NanoProcessor   |    50|
+|3     |    Program_Counter |Register_PC     |    31|
+|4     |    RegisterBank    |Register_Bank   |    19|
+|5     |      reg_1         |Register_4bit   |     4|
+|6     |      reg_2         |Register_4bit_0 |     4|
+|7     |      reg_7         |Register_4bit_1 |    11|
+|8     |  SlowClk           |Slow_Clk        |    35|
++------+--------------------+----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:24 ; elapsed = 00:00:28 . Memory (MB): peak = 837.898 ; gain = 498.730
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 9 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:20 . Memory (MB): peak = 837.898 ; gain = 171.801
+Synthesis Optimization Complete : Time (s): cpu = 00:00:24 ; elapsed = 00:00:28 . Memory (MB): peak = 837.898 ; gain = 498.730
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 9 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+100 Infos, 13 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:25 ; elapsed = 00:00:31 . Memory (MB): peak = 837.898 ; gain = 510.379
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/ASUS TUF/Documents/Vivado/Nano_Alts/Basic2/Lab10.runs/synth_1/Computer.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Computer_utilization_synth.rpt -pb Computer_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 837.898 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Mon May 26 20:57:30 2025...

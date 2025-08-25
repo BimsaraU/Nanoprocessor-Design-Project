@@ -1,0 +1,57 @@
+Group 10
+________________________________________________________________________________
+
+Basic and Optimized Nano Processor Instructions
+________________________________________________________________________________
+********************************************************************************
+Notes: No Special Notes
+================================================================================
+
+Reset Button => BTNC (Center)
+
+________________________________________________________________________________
+________________________________________________________________________________
+
+Extended Nano Processor Instructions
+________________________________________________________________________________
+********************************************************************************
+Notes: 
+>> This processor is upgraded to an 8 bit processor
+
+>> Negation is replaced by Subtraction and last 3 bits of the instruction
+   defining the target register.
+
+>> Newly added Multiply, Divide, Compare and Bitwise operators.
+
+>> Divide instruction has it's last bit decide whether the quotient (when 0) or
+   or the remainder (when 1) is given as the result.
+
+>> Compare instruction has it's  last bit decide whether the greater value 
+   (when 0) or the lesser value (when 1) is given as the result.
+
+>> Bitwise operation instruction has it's  last bits decide whether the AND 
+   (when 00) or OR (when 01) or NOT (when 10) or XOR (when 1) is given as the result.
+
+ 
+================================================================================
+
+Reset Button => BTNC (Center)
+Step Button  => BTNU (Up)
+
+The Display has 2 different Display Mode:
+ 1. Program Counter with 2 Hex values to show the value : R2 => 0
+ 2. Decimal Value from 3 displays                       : R2 => 1
+
+To handle the two's compliment set T1 => 1
+
+To Switch to step mode set U1 => 1
+ 
+To switch the program ROM  [R3, T2] => 00 (Demonstrate Addition/Subtraction)
+                                    => 01 (Demonstrate Multiplication/Division) 
+                                    => 10 (Demonstrate Comparison/Division) 
+                                    => 11 (Demonstrate Bitwise Operations) 
+  
+To switch the register that's Displayed [W16, V16. V17] => (Needed Register)
+
+________________________________________________________________________________
+________________________________________________________________________________
